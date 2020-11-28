@@ -11,12 +11,12 @@ The App Registration needs to be in the same Azure Tenant as the Dynamics 365 en
 - Navigate to the [Azure Portal](https://portal.azure.com). Login with credentials that can register an application.
 - Expand the menu in the top left and navigate to Azure Active Directory
 
-![](images\navigate-to-azure-ad.png)
+![](images\navigate-to-azure-ad.png?raw=true)
 
 - Then navigate to **App Registrations**
 - Then click on **New registration**
 
-![](images\navigate-to-app-registrations.png)
+![](images\navigate-to-app-registrations.png?raw=true)
 
 - Fill in the application details
     - Enter a meaningful name
@@ -24,26 +24,26 @@ The App Registration needs to be in the same Azure Tenant as the Dynamics 365 en
     - Leave the Redirect URI blank
 - Click on Register
 
-![](images\create-app-registration.png)
+![](images\create-app-registration.png?raw=true)
 
 - Click on **Certificates & Secrets**
 - Click on "+ New Client Secret"
 
-![](images\add-client-secret.png)
+![](images\add-client-secret.png?raw=true)
 
 - Enter a meaningful name
 - Select the expiration of the secret
 - Click on Add
 
-![](images\add-new-secret-one-year.png)
+![](images\add-new-secret-one-year.png?raw=true)
 
 - Save the "Value" in a place you will not lose it. This is your one chance to view the full value.
 
-![](images\client-secret-details.png)
+![](images\client-secret-details.png?raw=true)
 
 - Click on **Overview**
 
-![](images\app-registration-overview.png)
+![](images\app-registration-overview.png?raw=true)
 
 
 - For the next steps we need to have the following values
@@ -57,33 +57,33 @@ For this step of the process we navigate to the Dynamics 365 application for add
 - https://make.powerapps.com
 - Select the environment you need to add the user to
 
-![](images\make-select-environment.png)
+![](images\make-select-environment.png?raw=true)
 
 - Click on the gear in the upper right corner
 - Click on Advanced Settings
 
-![](images\make-select-advanced-settings.png)
+![](images\make-select-advanced-settings.png?raw=true)
 
 - Click on the down caret next to **Settings**
 - Click **Security** under **System**
 - Then click on **Users**
 
-![](images\web-navigate-security.png)
+![](images\web-navigate-security.png?raw=true)
 
-![](images\web-navigate-security-users.png)
+![](images\web-navigate-security-users.png?raw=true)
 
 - Expand the list of Views
 - Select **Application Users**
 
-![](images\web-navigate-security-users-application.png)
+![](images\web-navigate-security-users-application.png?raw=true)
 
 - Then click on the **+ New** button
 
-![](images\web-navigate-security-users-new.png)
+![](images\web-navigate-security-users-new.png?raw=true)
 
 - Make sure you select the **Application User** form
 
-![](images\web-navigate-security-new-user-form-select.png)
+![](images\web-navigate-security-new-user-form-select.png?raw=true)
 
 - Enter the Azure AD Application Registration Id (AppId from above steps)
 - Enter a name for the Application (First and Last Name)
@@ -92,7 +92,7 @@ For this step of the process we navigate to the Dynamics 365 application for add
     - For an ISV, for example, you could put your support email address here
 - Then click Save
 
-![](images\web-new-application-user-create-details.png)
+![](images\web-new-application-user-create-details.png?raw=true)
 
 - Then assign the appropriate roles to the user using the **Manage Roles** at the top of the screen
 
