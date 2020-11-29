@@ -139,7 +139,7 @@ First, in our app.config I have setup a connection string and app keys with the 
 ```
 
 ## Code
-The first section of the console app shows using the connection string to connect to CDS.
+The first section of the console app shows using the [connection string to connect to CDS](https://github.com/polks71/cds-app-registration/blob/b34625177c1d9bd0dc07abc08fb5922bea0ebc7c/src/Cds-App-Registration/Cds-App-Registration/Program.cs#L20).
 ```csharp
 using (var connectionStringClient = new CrmServiceClient(ConfigurationManager.ConnectionStrings["cds-connection-string"].ConnectionString))
             {
@@ -160,7 +160,7 @@ using (var connectionStringClient = new CrmServiceClient(ConfigurationManager.Co
             }            
 ```
 
-The second section of code uses the AuthOverrideHook property of the CrmServiceClient. 
+The second section of code uses the [AuthOverrideHook property of the CrmServiceClient](https://github.com/polks71/cds-app-registration/blob/b34625177c1d9bd0dc07abc08fb5922bea0ebc7c/src/Cds-App-Registration/Cds-App-Registration/Program.cs#L39). 
 ```csharp
             //Retrieve the connection parameters from the app.config
             var organizationUrl = ConfigurationManager.AppSettings["organizationUrl"];
